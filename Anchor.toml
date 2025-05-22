@@ -1,0 +1,20 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+fee_governance_hub = "B2MAnZ2rRrespfWjFbq6jxp6BFDZ35wPQtMHY4zd3iFD"
+[programs.devnet]
+fee_governance_hub = "B2MAnZ2rRrespfWjFbq6jxp6BFDZ35wPQtMHY4zd3iFD"
+[programs.mainnet]
+fee_governance_hub = "B2MAnZ2rRrespfWjFbq6jxp6BFDZ35wPQtMHY4zd3iFD"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://devnet.helius-rpc.com/?api-key=bb956f7e-055d-40e0-9f31-d3e79526eaf8"
+wallet = "../roundies_devnet.json"
+
+[scripts]
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/test.ts"
